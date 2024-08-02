@@ -51,10 +51,6 @@ function handleHomeButtonClick() {
   // Add code here to handle the home button click
 }
 
-function handleFeaturesButtonClick() {
-  console.log('Features button clicked!');
-  // Add code here to handle the features button click
-}
 
 function handlePricingButtonClick() {
   console.log('Pricing button clicked!');
