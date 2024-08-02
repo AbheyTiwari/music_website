@@ -1,195 +1,254 @@
-/* styles.css */
+/* Global Styles */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  .navbar-nav {
-    margin: auto;
-  }
-  
-  .hero {
-    height: 100vh;
-    background-image: url("https://i.pinimg.com/originals/59/94/b5/5994b5a21eadaf45cef834aba2c7e262.gif");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    filter: blur(5px);
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1; /* Ensure overlay is above the image */
-  }
-  
-  .hero-overlay h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .feature-cards {
-    display: flex;
-    justify-content: center;
-    position: relative; /* Add this to make the image absolute */
-  }
-  
-  .feature-card-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px; /* Add this to match the rounded corners of the card */
-  }
-  
-  .class-col {
-    margin: auto;
-  }
-  
-  .scrolling-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    white-space: nowrap;
-    animation: scrolling-text 10s linear infinite;
-  }
-  
-  @keyframes scrolling-text {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .Home {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    clear: both;
-  }
-  
-  /* Classes section */
-  .classes {
-    background-color: #f7f7f7; /* Light gray background */
-    padding: 40px 0;
-  }
-  
-  .classes .container {
-    max-width: 1200px; /* Limit the width of the container */
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-  }
-  
-  .classes .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .classes .col-lg-3 {
-    margin: 20px;
-    flex-basis: 25%; /* Make each column 25% wide */
-  }
-  
-  .classes .card {
-    background-color: #fff; /* White background */
-    border: 1px solid #ddd; /* Light gray border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-  }
-  
-  .classes .card:hover {
-    transform: scale(1.05); /* Scale up the card on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
-  }
-  
-  .classes .card-img-top {
-    height: 150px; /* Set a fixed height for the image */
-    object-fit: cover; /* Make the image cover the entire area */
-    border-radius: 10px 10px 0 0; /* Add a rounded corner to the top */
-  }
-  
-  .classes .card-body {
-    padding: 20px;
-  }
-  
-  .classes .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .classes .card-text {
-    font-size: 14px;
-    color: #666; /* Dark gray text */
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Add a modern font family */
+}
 
-  .home {
-    background-image: url('Presentation1.jpg'); /* Add a background image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Make the section full height */
-    display: flex;
-    flex-direction: column; /* Make the elements stack vertically */
-    justify-content:center;
-    align-items: center;
-    color: #fff; /* Set text color to white */
-    text-align: center; /* Center the text horizontally */
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation */
+
+.navbar-nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav li {
+  margin-right: 20px;
+}
+
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+  color: #ccc;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/59/94/b5/5994b5a21eadaf45cef834aba2c7e262.gif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Classes Section */
+
+.classes {
+  background-color: #f7f7f7; /* Light gray background */
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classes .container {
+  max-width: 1200px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+.classes .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.classes .col-lg-3 {
+  margin: 20px;
+  flex-basis: 25%; /* Make each column 25% wide */
+}
+
+.classes .card {
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.classes .card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+.classes .card-img-top {
+  height: 150px; /* Set a fixed height for the image */
+  object-fit: cover; /* Make the image cover the entire area */
+  border-radius: 10px 10px 0 0; /* Add a rounded corner to the top */
+}
+
+.classes .card-body {
+  padding: 20px;
+}
+
+.classes .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.classes .card-text {
+  font-size: 14px;
+  color: #ffffff; /* Dark gray text */
+}
+
+/* Home Section */
+
+.home {
+  background-image: url('Presentation1.jpg'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Make the section full height */
+  display: flex;
+  flex-direction: column; /* Make the elements stack vertically */
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Set text color to white */
+  text-align: center; /* Center the text horizontally */
+}
+.home h2, .home p {
+  background-size: auto;
+  background-position: center;
+  height: 5vh; /* Make the section full height */
+  display: flex;
+  flex-direction: column; /* Make the elements stack vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff; /* Set text color to white */
+  text-align: center; /* Center the text horizontally */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Featured Section */
+
+.featured {
+  background-color: #333; /* Add a dark background color */
+  color: #fff; /* Set text color to white */
+  padding: 40px;
+  display: flex;
+  flex-direction: column; /* Make the elements stack vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.featured h2, .featured p {
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Typing Effect */
+
+.typing-effect {
+  font-family: monospace;
+  content: "\A";
+  white-space: pre;
+  font-size: 24px;
+  color: #fff;
+}
+
+#typed-text {
+  border-right: 2px solid #fff; /* Add a caret effect */
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
   }
-  
-  .home h2,.home p {
-     /* Add a background image */
-    background-size:auto;
-    background-position: center;
-    height: 5vh; /* Make the section full height */
-    display: flex;
-    flex-direction: column; /* Make the elements stack vertically */
-    justify-content:flex-start;
-    align-items: flex-start;
-    color: #fff; /* Set text color to white */
-    text-align: center; /* Center the text horizontally */
+  100% {
+    opacity: 1;
   }
-  
-  .featured {
-    background-color: #333; /* Add a dark background color */
-    color: #fff; /* Set text color to white */
-    padding: 40px;
+}
+
+/* Scrolling Text */
+
+.scrolling-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  animation: scrolling-text 10s linear infinite; /* Add a scrolling animation */
+}
+
+@keyframes scrolling-text {
+  0% {
+    transform: translateX(0);
   }
-  
-  .featured h2,.featured p {
-    font-weight: bold; /* Make text bold */
+  100% {
+    transform: translateX(-100%);
   }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .classes .col-lg-3 {
+    flex-basis: 50%; /* Make each column 50% wide on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .classes .col-lg-3 {
+    flex-basis: 100%; /* Make each column full width on smallest screens */
+  }
+}
