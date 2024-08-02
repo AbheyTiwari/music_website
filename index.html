@@ -12,7 +12,7 @@
   <!-- Navigation Menu -->
   <nav class="navbar navbar-expand-lg sticky-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand mx-4" href="#"><img src="./hero_image.jpg" height="30" width="30" alt=""></a>
+      <a class="navbar-brand mx-4" href="#"><img src="image.png" height="30" width="30" alt=""></a>
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -24,10 +24,10 @@
             <a class="nav-link active text-light" href="#" id="home-btn">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="#" id="features-btn">Features</a>
+            <a class="nav-link active text-light" href="#classes" id="features-btn">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="#" id="pricing-btn">Pricing</a>
+            <a class="nav-link active text-light" href="#pricing" id="pricing-btn">Pricing</a>
           </li>
         </ul>
       </div>
@@ -51,7 +51,7 @@
   </section>
 
  <!-- Classes -->
-<section class="classes">
+<section class="classes" id="classes">
   <div class="container">
     <h1>Learn to play an Instrument</h1>
     <div class="row">
@@ -119,11 +119,71 @@
       this.style.display = "none";
     });
   </script>
+
+<!-- Pricing Section -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h1>Pricing Plans</h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>Basic</h5>
+          </div>
+          <div class="card-body">
+            <h2>₹999/month</h2>
+            <ul>
+              <li>1 hour of lessons per week</li>
+              <li>Access to online resources</li>
+              <li>Monthly progress reports</li>
+            </ul>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>Premium</h5>
+          </div>
+          <div class="card-body">
+            <h2>₹1999/month</h2>
+            <ul>
+              <li>2 hours of lessons per week</li>
+              <li>Access to online resources</li>
+              <li>Monthly progress reports</li>
+              <li>Personalized feedback</li>
+            </ul>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>Elite</h5>
+          </div>
+          <div class="card-body">
+            <h2>₹2999/month</h2>
+            <ul>
+              <li>3 hours of lessons per week</li>
+              <li>Access to online resources</li>
+              <li>Monthly progress reports</li>
+              <li>Personalized feedback</li>
+              <li>Quarterly performance evaluations</li>
+            </ul>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2024 Abhey Tiwari</p>
   </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
