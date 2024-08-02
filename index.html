@@ -21,13 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-light" href="#">Home</a>
+            <a class="nav-link active text-light" href="#" id="home-btn">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="#">Features</a>
+            <a class="nav-link active text-light" href="#" id="features-btn">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="#">Pricing</a>
+            <a class="nav-link active text-light" href="#" id="pricing-btn">Pricing</a>
           </li>
         </ul>
       </div>
@@ -38,66 +38,92 @@
   <section class="hero">
     <div class="hero-overlay">
       <h1>Unlock Your Musical Potential</h1><br>
-      <strong>Learn from the Best</strong>
+      <strong>Learn from the Best</strong><br>
       Unlock Your Musical Potential
     </div>
   </section>
 
   <!-- Introduction/Tagline -->
   <section class="home">
-    <h2>Only at Spardha!</h2>
-    <p>Learn music & dance at your own pace through a personalized adaptive learning model that favors your interest and growth. Get a trusted result-oriented curriculum created by industry experts to accelerate your learning. You will also get multiple performance opportunities to boost your confidence and improve your technical skills.</p>
-</section>
+    <div class="typing-effect">
+      <span id="typed-text"></span>
+    </div>
+  </section>
 
-
-  <!-- Classes -->
-  <section class="classes">
-    <div class="container">
-      <h1>Platform Key Features</h1>
+ <!-- Classes -->
+<section class="classes">
+  <div class="container">
+    <h1>Learn to play an Instrument</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100" style="background-image: url('https://i.pinimg.com/originals/ed/ef/6a/edef6ac2e2721688a25316d7bff4e825.gif');">
+          <div class="card-body text-white">
+            <h5 class="card-title">Piano</h5>
+            <p class="card-text">Learn to play the piano, a versatile instrument.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100" style="background-image: url('https://i.gifer.com/Ivo6.gif');">
+          <div class="card-body text-white">
+            <h5 class="card-title">Guitar</h5>
+            <p class="card-text">Learn to play the guitar, a popular instrument.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100" style="background-image: url('https://i.pinimg.com/originals/fc/db/21/fcdb2150e1efa6aececb0f842c628158.gif');">
+            <div class="card-body text-white">
+              <h5 class="card-title">Drums</h5>
+              <p class="card-text">Learn to play the drums, a dynamic instrument.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" id="more-btn">More</button>
+    <div id="more-cards" style="display: none;">
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="./hero_image.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="card h-100" style="background-image: url('https://i.pinimg.com/originals/53/7a/73/537a73e176525cfb13c17ab5633220bd.gif');">
+            <div class="card-body text-white">
+              <h5 class="card-title">Violin</h5>
+              <p class="card-text">Learn to play the violin, a beautiful instrument.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img class="card-img-top" src="./hero_image.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card h-100" style="background-image: url('https://33.media.tumblr.com/e9bb6fe3ad1f15316e78dfd85be6d1c4/tumblr_nebhm2ERGC1r0kdxho1_500.gif ');">
+            <div class="card-body text-white">
+              <h5 class="card-title">Cello</h5>
+              <p class="card-text">Learn to play the cello.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img class="card-img-top" src="./hero_image.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img class="card-img-top" src="./hero_image.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100" style="background-image: url('https://media3.giphy.com/media/NttCQeU3b1GcE/giphy.gif?cid=6c09b9522t5hz5i7e79xzrozwccpt2i1hxc0dc85167si4qg&ep=v1_gifs_search&rid=giphy.gif&ct=g');">
+              <div class="card-body text-white">
+                <h5 class="card-title">Bass</h5>
+                <p class="card-text">Learn to play the bass</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <script>
+    document.getElementById("more-btn").addEventListener("click", function() {
+      document.getElementById("more-cards").style.display = "block";
+      this.style.display = "none";
+    });
+  </script>
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2024 Abhey Tiwari</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
